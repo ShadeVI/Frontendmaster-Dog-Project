@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Dogs</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-item">
+            <h1 class="logo">
+                Dog Viewer API
+            </h1>
+        </div>
+        <div class="nav-item center">
+            <select class="dog-select">
+                <option selected hidden value="" disabled>Select one</option>
+            </select>
+        </div>
+        <div class="nav-item right">
+            <button class="add-doggo">Random dog</button>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="description">
+            <p class="status">STATUS: <span class="status-result"></span></p>
+        </div>
+        <div class="image-container">
+            <div class="spinner">
+                LOADING...
+            </div>
+            <img src="http://placecorgi.com/260/180" alt="corgifoto" class="dog-image show">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
